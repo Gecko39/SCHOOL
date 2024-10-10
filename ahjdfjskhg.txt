@@ -1,1 +1,7 @@
 amonggaudsgfsu
+1) git add .
+- git add "name of file"
+2) git status
+- green text should show up
+3) git commit -m "name of commit"
+4) git push
