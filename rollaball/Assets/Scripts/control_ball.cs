@@ -24,6 +24,11 @@ public class control_ball : MonoBehaviour
 
     public GameObject EndTextObject;
 
+    public GameObject pickupSFX;
+    public GameObject winSFX;
+    public GameObject loseSFX;
+    public GameObject Soundtrack;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -63,6 +68,10 @@ public class control_ball : MonoBehaviour
     {
         if (other.gameObject.CompareTag("PickUp"))
         {
+            if (count < 3) 
+            { 
+                pickupSFX.GetComponent<AudioSource>().Play();
+            }
             other.gameObject.SetActive(false);
             count = count + 1;
             SetCountText();
@@ -71,6 +80,9 @@ public class control_ball : MonoBehaviour
             {
                 EndTextObject.SetActive(true);
                 Destroy(GameObject.FindGameObjectWithTag("Enemy"));
+                Soundtrack.GetComponent<AudioSource>().Stop();
+                winSFX.GetComponent<AudioSource>().Play();
+
             }
         }
     }
@@ -79,18 +91,22 @@ public class control_ball : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
             // Destroy the current object
-            Destroy(gameObject);
+            gameObject.SetActive(false);
             // Update the winText to display "You Lost..."
             EndTextObject.gameObject.SetActive(true);
             EndTextObject.GetComponent<TextMeshProUGUI>().text = "You Lost...";
+            Soundtrack.GetComponent<AudioSource>().Stop();
+            loseSFX.GetComponent<AudioSource>().Play();
         }
         if (collision.gameObject.CompareTag("Bar"))
         {
             // Destroy the current object
-            Destroy(gameObject);
+            gameObject.SetActive(false);
             // Update the winText to display "You Lost..."
             EndTextObject.gameObject.SetActive(true);
             EndTextObject.GetComponent<TextMeshProUGUI>().text = "You Fell...";
+            Soundtrack.GetComponent<AudioSource>().Stop();
+            loseSFX.GetComponent<AudioSource>().Play();
         }
     }
 }

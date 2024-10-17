@@ -5,3 +5,6 @@ amonggaudsgfsu
 - green text should show up
 3) git commit -m "name of commit"
 4) git push
+
+retrieve files 
+git pull
