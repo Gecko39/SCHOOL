@@ -103,6 +103,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 104
@@ -110,39 +114,39 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1608}
+      Script: {instanceID: 1610}
     - Class: 114
-      Script: {instanceID: 2258}
+      Script: {instanceID: 2260}
     - Class: 114
-      Script: {instanceID: 2736}
+      Script: {instanceID: 2738}
     - Class: 114
-      Script: {instanceID: 2950}
+      Script: {instanceID: 2952}
     - Class: 114
-      Script: {instanceID: 3364}
+      Script: {instanceID: 3366}
     - Class: 114
-      Script: {instanceID: 3952}
+      Script: {instanceID: 3954}
     - Class: 114
-      Script: {instanceID: 4394}
+      Script: {instanceID: 4396}
     - Class: 114
-      Script: {instanceID: 4674}
+      Script: {instanceID: 4676}
     - Class: 114
-      Script: {instanceID: 5432}
+      Script: {instanceID: 5434}
     - Class: 114
-      Script: {instanceID: 5450}
+      Script: {instanceID: 5452}
     - Class: 114
-      Script: {instanceID: 5646}
+      Script: {instanceID: 5648}
     - Class: 114
-      Script: {instanceID: 6076}
+      Script: {instanceID: 6078}
     - Class: 114
-      Script: {instanceID: 6246}
+      Script: {instanceID: 6248}
     - Class: 114
-      Script: {instanceID: 7018}
+      Script: {instanceID: 7020}
     - Class: 114
-      Script: {instanceID: 7464}
+      Script: {instanceID: 7466}
     - Class: 114
-      Script: {instanceID: 7702}
+      Script: {instanceID: 7704}
     - Class: 114
-      Script: {instanceID: 7780}
+      Script: {instanceID: 7782}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -788,7 +792,7 @@ ScriptsOnlyBuild:
     className: UnityOnTriggerExitMessageListener
   - hash:
       serializedVersion: 2
-      Hash: a6c45c3717a181193506d4c2e502dd8e
+      Hash: 2ef7af6aff2f6786e9913043fe6d28d9
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: control_ball
@@ -1221,4 +1225,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/minigame.unity
-  playerPath: C:/Users/dpal6/rollaball/Builds/v0.2_stalker_ver/Rollaball.exe
+  playerPath: C:/Users/dpal6/SCHOOL/SCHOOL/rollaball/Builds/Rollaball.exe

@@ -28,6 +28,8 @@ public class control_ball : MonoBehaviour
     public GameObject winSFX;
     public GameObject loseSFX;
     public GameObject Soundtrack;
+    public GameObject wallSFX;
+    public GameObject boxSFX;
 
     // Start is called before the first frame update
     void Start()
@@ -88,6 +90,14 @@ public class control_ball : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
+        if (collision.gameObject.CompareTag("Wall"))
+        {
+            wallSFX.GetComponent<AudioSource>().Play();
+        }
+        if (collision.gameObject.CompareTag("Box"))
+        {
+            boxSFX.GetComponent<AudioSource>().Play();
+        }
         if (collision.gameObject.CompareTag("Enemy"))
         {
             // Destroy the current object
