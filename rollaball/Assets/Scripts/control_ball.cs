@@ -30,6 +30,8 @@ public class control_ball : MonoBehaviour
     public GameObject Soundtrack;
     public GameObject wallSFX;
     public GameObject boxSFX;
+    public GameObject collect;
+    public GameObject WIN1;
 
     // Start is called before the first frame update
     void Start()
@@ -73,6 +75,7 @@ public class control_ball : MonoBehaviour
             if (count < 3) 
             { 
                 pickupSFX.GetComponent<AudioSource>().Play();
+                var currentPickupFX = Instantiate(collect, other.transform.position, Quaternion.Euler(-90, 0, 0));
             }
             other.gameObject.SetActive(false);
             count = count + 1;
@@ -80,6 +83,7 @@ public class control_ball : MonoBehaviour
 
             if (count == 4)
             {
+                var currentPickupFX = Instantiate(WIN1, other.transform.position, Quaternion.Euler(-90, 0, 0));
                 EndTextObject.SetActive(true);
                 Destroy(GameObject.FindGameObjectWithTag("Enemy"));
                 Soundtrack.GetComponent<AudioSource>().Stop();
