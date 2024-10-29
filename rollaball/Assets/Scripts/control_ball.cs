@@ -32,6 +32,8 @@ public class control_ball : MonoBehaviour
     public GameObject boxSFX;
     public GameObject collect;
     public GameObject WIN1;
+    public GameObject explo1;
+    public GameObject explo2;
 
     // Start is called before the first frame update
     void Start()
@@ -109,6 +111,8 @@ public class control_ball : MonoBehaviour
             // Update the winText to display "You Lost..."
             EndTextObject.gameObject.SetActive(true);
             EndTextObject.GetComponent<TextMeshProUGUI>().text = "You Lost...";
+            Instantiate(explo1, transform.position, Quaternion.Euler(-90, 0, 0));
+            Instantiate(explo2, transform.position, Quaternion.Euler(-90, 0, 0));
             Soundtrack.GetComponent<AudioSource>().Stop();
             loseSFX.GetComponent<AudioSource>().Play();
         }

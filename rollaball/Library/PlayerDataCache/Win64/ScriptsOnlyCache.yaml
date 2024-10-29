@@ -5,8 +5,6 @@ ScriptsOnlyBuild:
     - cameracontroller
     - control_ball
     - enemy
-    Unity.AI.Navigation.Editor.dll:
-    - Unity.AI.Navigation.Editor.NavMeshAssetManager
     Unity.AI.Navigation.dll:
     - Unity.AI.Navigation.NavMeshSurface
     Unity.InputSystem.dll:
@@ -160,6 +158,10 @@ ScriptsOnlyBuild:
     - Class: 195
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 208
       Script: {instanceID: 0}
@@ -792,7 +794,7 @@ ScriptsOnlyBuild:
     className: UnityOnTriggerExitMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 2ef7af6aff2f6786e9913043fe6d28d9
+      Hash: ba99ca0c1b008fab3ea908449f496fde
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: control_ball
@@ -1225,4 +1227,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/minigame.unity
-  playerPath: C:/Users/dpal6/SCHOOL/SCHOOL/rollaball/Builds/Rollaball.exe
+  playerPath: C:/Users/gecko/github folder/SCHOOL/rollaball/Builds/Rollaball.exe
