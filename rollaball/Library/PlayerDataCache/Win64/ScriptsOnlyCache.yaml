@@ -5,6 +5,7 @@ ScriptsOnlyBuild:
     - cameracontroller
     - control_ball
     - enemy
+    - exitbutton
     Unity.AI.Navigation.dll:
     - Unity.AI.Navigation.NavMeshSurface
     Unity.InputSystem.dll:
@@ -34,8 +35,10 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
   serializedClasses:
     Unity.InputSystem:
     - UnityEngine.InputSystem.InputAction
@@ -62,15 +65,85 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Style
     - TMPro.VertexGradient
     UnityEngine.CoreModule:
+    - UnityEngine.Events.ArgumentCache
     - UnityEngine.Events.PersistentCallGroup
+    - UnityEngine.Events.PersistentListenerMode
     UnityEngine.TextCoreFontEngineModule:
     - UnityEngine.TextCore.FaceInfo
     - UnityEngine.TextCore.Glyph
     - UnityEngine.TextCore.GlyphMetrics
     - UnityEngine.TextCore.GlyphRect
     UnityEngine.UI:
+    - UnityEngine.UI.AnimationTriggers
+    - UnityEngine.UI.Button/ButtonClickedEvent
+    - UnityEngine.UI.ColorBlock
     - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
-  methodsToPreserve: []
+    - UnityEngine.UI.Navigation
+    - UnityEngine.UI.SpriteState
+  methodsToPreserve:
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: exitbutton
+    methodName: doExitGame
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: UnityEngine.CoreModule
+    fullTypeName: UnityEngine.GameObject
+    methodName: SetActive
+  - assembly: Assembly-CSharp
+    fullTypeName: exitbutton
+    methodName: doExitGame
   sceneClasses:
     Assets/Scenes/minigame.unity:
     - Class: 1
@@ -112,6 +185,8 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 1606}
+    - Class: 114
       Script: {instanceID: 1610}
     - Class: 114
       Script: {instanceID: 2260}
@@ -119,6 +194,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 2738}
     - Class: 114
       Script: {instanceID: 2952}
+    - Class: 114
+      Script: {instanceID: 3272}
     - Class: 114
       Script: {instanceID: 3366}
     - Class: 114
@@ -134,17 +211,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5648}
     - Class: 114
-      Script: {instanceID: 6078}
+      Script: {instanceID: 5836}
     - Class: 114
-      Script: {instanceID: 6248}
+      Script: {instanceID: 6080}
     - Class: 114
-      Script: {instanceID: 7020}
+      Script: {instanceID: 6250}
     - Class: 114
-      Script: {instanceID: 7466}
+      Script: {instanceID: 7022}
     - Class: 114
-      Script: {instanceID: 7704}
+      Script: {instanceID: 7468}
     - Class: 114
-      Script: {instanceID: 7782}
+      Script: {instanceID: 7706}
+    - Class: 114
+      Script: {instanceID: 7784}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -164,6 +243,8 @@ ScriptsOnlyBuild:
     - Class: 199
       Script: {instanceID: 0}
     - Class: 208
+      Script: {instanceID: 0}
+    - Class: 213
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -848,6 +929,12 @@ ScriptsOnlyBuild:
     className: Text
   - hash:
       serializedVersion: 2
+      Hash: 587c4e72479be379f55491a7be5a9267
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: exitbutton
+  - hash:
+      serializedVersion: 2
       Hash: 2071f7ac454ae14eafecfd4041edae3a
     assemblyName: Unity.InputSystem
     namespaceName: UnityEngine.InputSystem.Editor
@@ -1227,4 +1314,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/minigame.unity
-  playerPath: C:/Users/gecko/github folder/SCHOOL/rollaball/Builds/Rollaball.exe
+  playerPath: C:/Users/dpal6/Desktop/New folder (2)/Rollaball.exe

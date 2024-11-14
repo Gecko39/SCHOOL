@@ -316,6 +316,7 @@
 "Assets/Scripts/cameracontroller.cs"
 "Assets/Scripts/control_ball.cs"
 "Assets/Scripts/enemy.cs"
+"Assets/Scripts/exitbutton.cs"
 -langversion:9.0
 /deterministic
 /optimize+
