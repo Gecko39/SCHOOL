@@ -23,10 +23,14 @@ Material:
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
-    m_TexEnvs: []
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 1735b6defeff6934c8776515b0b74512, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats: []
     m_Colors:
-    - _Color: {r: 0.4264151, g: 0.4264151, b: 0.4264151, a: 1}
+    - _Color: {r: 0.2603773, g: 0.2603773, b: 0.2603773, a: 1}
     - _EmissionColor: {r: 0.15292618, g: 0.15292618, b: 0.15292618, a: 1}
   m_BuildTextureStacks: []
