@@ -35,6 +35,9 @@ public class control_ball : MonoBehaviour
     public GameObject explo1;
     public GameObject explo2;
 
+    private Vector3 targetPos;
+    [SerializeField] private bool isMoving = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -68,6 +71,39 @@ public class control_ball : MonoBehaviour
 
         // Apply force to the Rigidbody to move the player.
         rb.AddForce(movement * speed);
+
+        if (Input.GetMouseButton(0)) // Check if left mouse button is held down
+        {
+              Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition); 
+              Debug.DrawRay(ray.origin, ray.direction * 50, Color.yellow);
+              RaycastHit hit; // Define variable to hold raycast hit information
+
+              // Check if raycast hits an object
+              if (Physics.Raycast(ray, out hit)) 
+
+                  if (hit.collider.gameObject.layer == LayerMask.NameToLayer("Ground"))
+                  {  
+                     targetPos = hit.point; // Set target position
+                     isMoving = true; // Start player movement
+                  }
+              else
+              {
+                   isMoving = false; // Stop player movement
+              }
+        }
+         
+        if (isMoving)
+        {
+              // Move the player towards the target position
+              Vector3 direction = targetPos - rb.position;
+              direction.Normalize();
+              rb.AddForce(direction * speed);
+        }
+
+        if (Vector3.Distance(rb.position, targetPos) < 0.5f)
+        {
+         isMoving = false;
+        }
     }
 
     void OnTriggerEnter(Collider other)
@@ -94,6 +130,7 @@ public class control_ball : MonoBehaviour
             }
         }
     }
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Wall"))
@@ -126,5 +163,5 @@ public class control_ball : MonoBehaviour
             Soundtrack.GetComponent<AudioSource>().Stop();
             loseSFX.GetComponent<AudioSource>().Play();
         }
-    }
+    } 
 }

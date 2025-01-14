@@ -1026,6 +1026,7 @@ MonoBehaviour:
   WIN1: {fileID: 1344253657}
   explo1: {fileID: 1073147724}
   explo2: {fileID: 1335187517}
+  isMoving: 0
 --- !u!114 &117592468
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1417,7 +1418,7 @@ GameObject:
   - component: {fileID: 140137583}
   - component: {fileID: 140137584}
   - component: {fileID: 140137585}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wall (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2169,7 +2170,7 @@ GameObject:
   - component: {fileID: 223877196}
   - component: {fileID: 223877195}
   - component: {fileID: 223877194}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wall (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8074,7 +8075,7 @@ GameObject:
   - component: {fileID: 313448975}
   - component: {fileID: 313448974}
   - component: {fileID: 313448973}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wall (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9793,12 +9794,12 @@ GameObject:
   - component: {fileID: 471839900}
   - component: {fileID: 471839899}
   m_Layer: 0
-  m_Name: wall (21)
+  m_Name: SECRET BRIDGE
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &471839898
 Transform:
   m_ObjectHideFlags: 0
@@ -11227,7 +11228,7 @@ GameObject:
   - component: {fileID: 738799134}
   - component: {fileID: 738799137}
   - component: {fileID: 738799138}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wall (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13753,7 +13754,7 @@ GameObject:
   - component: {fileID: 1030622769}
   - component: {fileID: 1030622773}
   - component: {fileID: 1030622774}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: groundddddddd
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19204,7 +19205,7 @@ GameObject:
   - component: {fileID: 1085694314}
   - component: {fileID: 1085694313}
   - component: {fileID: 1085694312}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wall (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20693,7 +20694,7 @@ GameObject:
   - component: {fileID: 1246191206}
   - component: {fileID: 1246191210}
   - component: {fileID: 1246191211}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31911,7 +31912,7 @@ GameObject:
   - component: {fileID: 1413807183}
   - component: {fileID: 1413807182}
   - component: {fileID: 1413807181}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wall (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32213,7 +32214,7 @@ GameObject:
   - component: {fileID: 1441325548}
   - component: {fileID: 1441325551}
   - component: {fileID: 1441325552}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wall (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
